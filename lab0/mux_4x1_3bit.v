@@ -26,7 +26,7 @@ input  s1,s0,
 output [2:0] M
     );
     wire [2:0] f1, f2;
-    mux_2x1_3bit a(X, Z, s1,f1);
-    mux_2x1_3bit b(Y, W, s1,f2);
-    mux_2x1_3bit c(f1, f2, s0, M);
+    mux_2x1_3bit a(X, Y, s0,f1);
+    mux_2x1_3bit b(Z, W, s0,f2);
+    mux_2x1_3bit c(f1, f2, s1, M);
 endmodule
